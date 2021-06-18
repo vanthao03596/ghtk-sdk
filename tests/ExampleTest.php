@@ -1,6 +1,6 @@
 <?php
 
-namespace VendorName\Skeleton\Tests;
+namespace Vanthao03596\GhtkSdk\Tests;
 
 use PHPUnit\Framework\TestCase;
 
