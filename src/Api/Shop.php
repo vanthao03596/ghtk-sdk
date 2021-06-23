@@ -10,7 +10,7 @@ class Shop extends AbstractApi
 {
     /**
      * @link https://docs.giaohangtietkiem.vn/?php#t-o-t-i-kho-n
-     * 
+     *
      * @param array $parameters
      *
      * @return mixed
@@ -26,7 +26,7 @@ class Shop extends AbstractApi
 
     /**
      * @link https://docs.giaohangtietkiem.vn/?php#t-i-kho-n-ng-k-tr-c
-     * 
+     *
      * @param array $parameters
      *
      * @return mixed
