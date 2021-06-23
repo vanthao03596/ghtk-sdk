@@ -176,7 +176,7 @@ class Builder
      */
     public function addHeaderValue(string $header, string $headerValue): void
     {
-        if (!isset($this->headers[$header])) {
+        if (! isset($this->headers[$header])) {
             $this->headers[$header] = $headerValue;
         } else {
             $this->headers[$header] = array_merge((array) $this->headers[$header], [$headerValue]);
@@ -196,7 +196,7 @@ class Builder
      */
     public function addCache(CacheItemPoolInterface $cachePool, array $config = []): void
     {
-        if (!isset($config['cache_key_generator'])) {
+        if (! isset($config['cache_key_generator'])) {
             $config['cache_key_generator'] = new HeaderCacheKeyGenerator(['Authorization', 'Cookie', 'Accept', 'Content-type']);
         }
         $this->cachePlugin = Plugin\CachePlugin::clientCache($cachePool, $this->streamFactory, $config);

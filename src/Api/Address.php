@@ -10,7 +10,7 @@ class Address extends AbstractApi
 {
     /**
      * @link https://docs.giaohangtietkiem.vn/?http#l-y-danh-sa-ch-i-a-chi-c-p-4
-     * 
+     *
      * @param array $parameters
      *
      * @return mixed

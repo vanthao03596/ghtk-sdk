@@ -10,7 +10,7 @@ class Inventory extends AbstractApi
 {
     /**
      * @link https://docs.giaohangtietkiem.vn/?http#l-y-danh-sa-ch-th-ng-tin-s-n-ph-m
-     * 
+     *
      * @param array $parameters
      *
      * @return mixed

@@ -4,18 +4,18 @@ declare(strict_types=1);
 
 namespace Vanthao03596\GhtkSdk;
 
+use Http\Client\Common\HttpMethodsClientInterface;
+use Http\Client\Common\Plugin;
+use Http\Discovery\Psr17FactoryDiscovery;
 use Psr\Cache\CacheItemPoolInterface;
+use Psr\Http\Client\ClientInterface;
+use Psr\Http\Message\ResponseInterface;
 use Vanthao03596\GhtkSdk\Api\AbstractApi;
 use Vanthao03596\GhtkSdk\Exception\BadMethodCallException;
 use Vanthao03596\GhtkSdk\Exception\InvalidArgumentException;
 use Vanthao03596\GhtkSdk\HttpClient\Builder;
-use Vanthao03596\GhtkSdk\HttpClient\Plugin\History;
-use Http\Client\Common\Plugin;
-use Http\Discovery\Psr17FactoryDiscovery;
-use Psr\Http\Client\ClientInterface;
-use Http\Client\Common\HttpMethodsClientInterface;
-use Psr\Http\Message\ResponseInterface;
 use Vanthao03596\GhtkSdk\HttpClient\Plugin\Authentication;
+use Vanthao03596\GhtkSdk\HttpClient\Plugin\History;
 
 /**
  * PHP GHTK client.
@@ -97,16 +97,20 @@ class Client
         switch ($name) {
             case 'shipment':
                 $api = new Api\Shipment($this);
+
                 break;
             case 'address':
                 $api = new Api\Address($this);
+
                 break;
             case 'inventory':
                 $api = new Api\Inventory($this);
+
                 break;
 
             case 'order':
                 $api = new Api\Order($this);
+
                 break;
             default:
                 throw new InvalidArgumentException(sprintf('Undefined api instance called: "%s"', $name));

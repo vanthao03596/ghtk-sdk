@@ -34,7 +34,7 @@ class Order extends AbstractApi
     public function checkStatus(string $label)
     {
         return $this->get("/services/shipment/v2/$label", [], [
-            'Accept' => '*/*'
+            'Accept' => '*/*',
         ]);
     }
 

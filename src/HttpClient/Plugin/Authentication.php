@@ -37,5 +37,4 @@ final class Authentication implements Plugin
 
         return $next($request);
     }
-
 }

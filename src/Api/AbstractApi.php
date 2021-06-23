@@ -68,7 +68,6 @@ abstract class AbstractApi
      */
     protected function get(string $path, array $parameters = [], array $requestHeaders = [])
     {
-
         if (count($parameters) > 0) {
             $path .= '?'.http_build_query($parameters, '', '&', PHP_QUERY_RFC3986);
         }
