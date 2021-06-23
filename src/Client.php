@@ -112,6 +112,10 @@ class Client
                 $api = new Api\Order($this);
 
                 break;
+
+            case 'shop':
+                $api = new Api\Shop($this);
+                break;
             default:
                 throw new InvalidArgumentException(sprintf('Undefined api instance called: "%s"', $name));
         }
