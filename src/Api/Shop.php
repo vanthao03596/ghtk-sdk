@@ -24,6 +24,30 @@ class Shop extends AbstractApi
         return $this->get('/services/shops/add', $parameters);
     }
 
+    /**
+     * @link https://docs.giaohangtietkiem.vn/?php#t-i-kho-n-ng-k-tr-c
+     * 
+     * @param array $parameters
+     *
+     * @return mixed
+     */
+    public function getToken(array $parameters)
+    {
+        $resolver = new OptionsResolver();
+
+        $resolver->define('email')
+            ->required()
+            ->allowedTypes('string');
+    
+        $resolver->define('password')
+            ->required()
+            ->allowedTypes('string');
+
+        $parameters = $resolver->resolve($parameters);
+
+        return $this->post('/services/shops/token', $parameters);
+    }
+
     private function createOptionsResolver(): OptionsResolver
     {
         $resolver = new OptionsResolver();

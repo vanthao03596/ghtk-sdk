@@ -28,6 +28,8 @@ use Vanthao03596\GhtkSdk\HttpClient\Plugin\History;
  * @method Api\Order                          checkStatus()
  * @method Api\Order                          cancel()
  * @method Api\Order                          printLabel()
+ * @method Api\Shop                           create()
+ * @method Api\Shop                           getToken()
  *
  * @author Pham Thao <phamthao03596@gmail.com>
  *

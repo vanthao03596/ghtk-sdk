@@ -33,9 +33,7 @@ class Order extends AbstractApi
      */
     public function checkStatus(string $label)
     {
-        return $this->get("/services/shipment/v2/$label", [], [
-            'Accept' => '*/*',
-        ]);
+        return $this->get("/services/shipment/v2/$label");
     }
 
     /**
@@ -59,7 +57,9 @@ class Order extends AbstractApi
      */
     public function printLabel(string $label)
     {
-        return $this->get("/services/label/$label");
+        return $this->get("/services/label/$label", [], [
+            'Accept' => '*/*',
+        ]);
     }
 
     private function createOptionsResolver(): OptionsResolver
