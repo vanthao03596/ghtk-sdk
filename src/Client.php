@@ -59,7 +59,7 @@ class Client
      * @param string|null $apiVersion
      * @param bool $testMode
      */
-    public function __construct(Builder $httpClientBuilder = null, bool $liveMode, $apiVersion = null)
+    public function __construct(Builder $httpClientBuilder = null, bool $liveMode = false, $apiVersion = null)
     {
         $this->responseHistory = new History();
         $this->httpClientBuilder = $builder = $httpClientBuilder ?? new Builder();
