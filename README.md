@@ -41,7 +41,7 @@ use Symfony\Component\HttpClient\HttplugClient;
 $client = Client::createWithHttpClient(new HttplugClient());
 ```
 
-## Basic usage of `php-github-api` client
+## Basic usage of `php-ghtk-api` client
 
 ```php
 <?php
@@ -53,10 +53,22 @@ $client = new \Vanthao03596\GhtkSdk\Client();
 
 $client->authenticate('d07a1AF0d8539B362d952c5854aac7bba971D801');
 
-$repositories = $client->api('user')->repositories('ornicar');
+$fee = $client->api('shipment')
+        ->calculateFee([
+            "pick_province" => "Hà Nội",
+            "pick_district" => "Quận Hai Bà Trưng",
+            "province" => "Hà nội",
+            "district" => "Quận Cầu Giấy",
+            "address" => "P.503 tòa nhà Auu Việt, số 1 Lê Đức Thọ",
+            "weight" => 1000,
+            "value" => 3000000,
+            "transport" => "fly",
+            "deliver_option" => "xteam",
+            "tags"  => [1]
+        ]);
 ```
 
-From `$client` object, you have access to all available GitHub api endpoints.
+From `$client` object, you have access to all available GHTK api endpoints.
 
 ## Testing
 
