@@ -277,7 +277,7 @@ $client = new \Vanthao03596\GhtkSdk\Client(
 
 $client->authenticate('APITokenSample-ca441e70288cB0515F310742');
 
-$client->api('shop')->create([
+$client->api('shop')->createShop([
     "name" => "shop test",
     "first_address" => "ngõ 2, Phan Bá Vành, Cầu Diễn",
     "province" => "Hà Nội",
