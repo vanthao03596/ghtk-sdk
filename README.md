@@ -1,8 +1,8 @@
 # PHP GHTK SDK
 
 [![Latest Version on Packagist](https://img.shields.io/packagist/v/vanthao03596/ghtk-sdk.svg?style=flat-square)](https://packagist.org/packages/vanthao03596/ghtk-sdk)
-[![GitHub Tests Action Status](https://img.shields.io/github/workflow/status/vanthao03596/ghtk-sdk/run-tests?label=tests)](https://github.com/vanthao03596/ghtk-sdk/actions?query=workflow%3ATests+branch%3Amaster)
-[![GitHub Code Style Action Status](https://img.shields.io/github/workflow/status/vanthao03596/ghtk-sdk/Check%20&%20fix%20styling?label=code%20style)](https://github.com/vanthao03596/ghtk-sdk/actions?query=workflow%3A"Check+%26+fix+styling"+branch%3Amaster)
+[![GitHub Tests Action Status](https://img.shields.io/github/workflow/status/vanthao03596/ghtk-sdk/run-tests?label=tests)](https://github.com/vanthao03596/ghtk-sdk/actions?query=workflow%3ATests+branch%3Amain)
+[![GitHub Code Style Action Status](https://img.shields.io/github/workflow/status/vanthao03596/ghtk-sdk/Check%20&%20fix%20styling?label=code%20style)](https://github.com/vanthao03596/ghtk-sdk/actions?query=workflow%3A"Check+%26+fix+styling"+branch%3Amain)
 [![Total Downloads](https://img.shields.io/packagist/dt/vanthao03596/ghtk-sdk.svg?style=flat-square)](https://packagist.org/packages/vanthao03596/ghtk-sdk)
 
 <p  align="center"><img  src="https://banners.beyondco.de/PHP%20GHTK%20SDK.png?theme=light&packageManager=composer+require&packageName=vanthao03596%2Fghtk-sdk&pattern=architect&style=style_1&description=A+simple+PHP+GHTK+API+client%2C+Object+Oriented%2C+tested+and+documented.&md=1&showWatermark=0&fontSize=100px&images=https%3A%2F%2Fwww.php.net%2Fimages%2Flogos%2Fnew-php-logo.svg"></p>
