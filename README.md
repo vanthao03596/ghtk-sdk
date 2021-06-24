@@ -29,7 +29,7 @@ We are decoupled from any HTTP messaging client with help by [HTTPlug](https://h
 ### Using a different http client
 
 ```bash
-composer require knplabs/github-api:^3.0 symfony/http-client nyholm/psr7
+composer require vanthao03596/ghtk-sdk symfony/http-client nyholm/psr7
 ```
 
 To set up the GHTK client with this HTTP client
