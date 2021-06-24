@@ -24,11 +24,11 @@ use Vanthao03596\GhtkSdk\HttpClient\Plugin\History;
  * @method Api\Shipment                       listPickAddress()
  * @method Api\Address                        getAddressLevel4()
  * @method Api\Inventory                      getProductInfo()
- * @method Api\Order                          create()
+ * @method Api\Order                          createOrder()
  * @method Api\Order                          checkStatus()
- * @method Api\Order                          cancel()
+ * @method Api\Order                          cancelOrder()
  * @method Api\Order                          printLabel()
- * @method Api\Shop                           create()
+ * @method Api\Shop                           createShop()
  * @method Api\Shop                           getToken()
  *
  * @author Pham Thao <phamthao03596@gmail.com>

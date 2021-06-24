@@ -15,7 +15,7 @@ class Order extends AbstractApi
      *
      * @return mixed
      */
-    public function create(array $parameters = [])
+    public function createOrder(array $parameters = [])
     {
         $resolver = $this->createOptionsResolver();
 
@@ -43,7 +43,7 @@ class Order extends AbstractApi
      *
      * @return mixed
      */
-    public function cancel(string $label)
+    public function cancelOrder(string $label)
     {
         return $this->post("/services/shipment/cancel/$label");
     }

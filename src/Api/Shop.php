@@ -15,7 +15,7 @@ class Shop extends AbstractApi
      *
      * @return mixed
      */
-    public function create(array $parameters = [])
+    public function createShop(array $parameters = [])
     {
         $resolver = $this->createOptionsResolver();
 
