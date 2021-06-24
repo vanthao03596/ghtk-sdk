@@ -2,14 +2,14 @@
 
 namespace Vanthao03596\GhtkSdk\Tests;
 
-use Vanthao03596\GhtkSdk\Exception\InvalidArgumentException;
-use Vanthao03596\GhtkSdk\Exception\BadMethodCallException;
 use PHPUnit\Framework\TestCase;
-use Vanthao03596\GhtkSdk\Client;
 use Psr\Http\Client\ClientInterface;
+use Vanthao03596\GhtkSdk\Api;
+use Vanthao03596\GhtkSdk\Client;
+use Vanthao03596\GhtkSdk\Exception\BadMethodCallException;
+use Vanthao03596\GhtkSdk\Exception\InvalidArgumentException;
 use Vanthao03596\GhtkSdk\HttpClient\Builder;
 use Vanthao03596\GhtkSdk\HttpClient\Plugin\Authentication;
-use Vanthao03596\GhtkSdk\Api;
 
 class ClientTest extends TestCase
 {
