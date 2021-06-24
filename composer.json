@@ -1,6 +1,6 @@
 {
     "name": "vanthao03596/ghtk-sdk",
-    "description": "This is my package GhtkSdk",
+    "description": "A simple PHP GHTK API client, Object Oriented, tested and documented.",
     "keywords": [
         "vanthao03596",
         "ghtk-sdk"
