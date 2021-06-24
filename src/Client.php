@@ -80,11 +80,11 @@ class Client
      *
      * @return Client
      */
-    public static function createWithHttpClient(ClientInterface $httpClient, bool $testMode): self
+    public static function createWithHttpClient(ClientInterface $httpClient, bool $liveMode = false): self
     {
         $builder = new Builder($httpClient);
 
-        return new self($builder, $testMode);
+        return new self($builder, $liveMode);
     }
 
     /**

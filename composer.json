@@ -30,7 +30,7 @@
     },
     "require-dev": {
         "friendsofphp/php-cs-fixer": "^2.17",
-        "phpunit/phpunit": "^9.5",
+        "phpunit/phpunit": "^8.5 || ^9.4",
         "guzzlehttp/psr7": "^1.7",
         "http-interop/http-factory-guzzle": "^1.0",
         "guzzlehttp/guzzle": "^7.2",
