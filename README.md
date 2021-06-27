@@ -1,7 +1,7 @@
 # PHP GHTK SDK
 
 [![Latest Version on Packagist](https://img.shields.io/packagist/v/vanthao03596/ghtk-sdk.svg?style=flat-square)](https://packagist.org/packages/vanthao03596/ghtk-sdk)
-[![GitHub Tests Action Status](https://img.shields.io/github/workflow/status/vanthao03596/ghtk-sdk/run-tests?label=tests)](https://github.com/vanthao03596/ghtk-sdk/actions?query=workflow%3ATests+branch%3Amain)
+![GitHub Tests Action Status](https://img.shields.io/github/workflow/status/vanthao03596/ghtk-sdk/Tests?label=tests)
 [![GitHub Code Style Action Status](https://img.shields.io/github/workflow/status/vanthao03596/ghtk-sdk/Check%20&%20fix%20styling?label=code%20style)](https://github.com/vanthao03596/ghtk-sdk/actions?query=workflow%3A"Check+%26+fix+styling"+branch%3Amain)
 [![Total Downloads](https://img.shields.io/packagist/dt/vanthao03596/ghtk-sdk.svg?style=flat-square)](https://packagist.org/packages/vanthao03596/ghtk-sdk)
 
