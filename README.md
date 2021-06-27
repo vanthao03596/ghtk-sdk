@@ -175,7 +175,13 @@ $client = Vanthao03596\GhtkSdk\Client::createWithHttpClient(new Http\Adapter\Guz
 
 $client->authenticate('APITokenSample-ca441e70288cB0515F310742');
 
-$client->api('order')->printLabel('S1.A1.17373471');
+$response = $client->api('order')->printLabel('S1.A1.17373471');
+
+header('Content-type: application/pdf');
+header('Content-disposition: attachment; filename=label.pdf');
+header('Content-Transfer-Encoding: Binary');
+echo $response;
+
 ```
 
 ### Get list pick address
