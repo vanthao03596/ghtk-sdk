@@ -150,7 +150,8 @@ class Shipment extends AbstractApi
             ->allowedValues('xteam', 'none');
 
         $resolver->define('tags')
-            ->allowedTypes('array');
+            ->allowedTypes('array')
+            ->allowedTypes('int[]');
 
 
         return $resolver;
