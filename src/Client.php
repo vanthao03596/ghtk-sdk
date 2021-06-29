@@ -16,6 +16,7 @@ use Vanthao03596\GhtkSdk\Exception\InvalidArgumentException;
 use Vanthao03596\GhtkSdk\HttpClient\Builder;
 use Vanthao03596\GhtkSdk\HttpClient\Plugin\Authentication;
 use Vanthao03596\GhtkSdk\HttpClient\Plugin\History;
+use Vanthao03596\GhtkSdk\HttpClient\Plugin\ReferToken;
 
 /**
  * PHP GHTK client.
@@ -129,7 +130,7 @@ class Client
     /**
      * Authenticate a user for all next requests.
      *
-     * @param string      $token GitHub private token
+     * @param string      $token GHTK private token
      *
      * @throws InvalidArgumentException If no token
      *
@@ -213,5 +214,24 @@ class Client
     protected function getHttpClientBuilder(): Builder
     {
         return $this->httpClientBuilder;
+    }
+
+    /**
+     * Set Refer Token for all next requests.
+     *
+     * @param string      $token GHTK private token
+     *
+     * @throws InvalidArgumentException If no token
+     *
+     * @return void
+     */
+    public function setReferToken(string $token): void
+    {
+        if (empty($token)) {
+            throw new InvalidArgumentException('You need token!');
+        }
+
+        $this->getHttpClientBuilder()->removePlugin(ReferToken::class);
+        $this->getHttpClientBuilder()->addPlugin(new ReferToken($token));
     }
 }

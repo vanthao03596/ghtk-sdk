@@ -292,6 +292,13 @@ $client = new \Vanthao03596\GhtkSdk\Client(
 
 $client->authenticate('APITokenSample-ca441e70288cB0515F310742');
 
+// Or use ReferToken plugin
+
+$client = Vanthao03596\GhtkSdk\Client::createWithHttpClient(new Http\Adapter\Guzzle7\Client, true); // true is production mode
+
+$client->authenticate('APITokenSample-ca441e70288cB0515F310742');
+$client->setReferToken('B2CToken-hlsheiwquhrksadlfkjahsdfjaaljh')
+
 ....
 ```
 
