@@ -67,7 +67,7 @@ class Client
         $this->apiVersion = $apiVersion ?: '1.6.2';
 
         $builder->addPlugin(new Plugin\HistoryPlugin($this->responseHistory));
-        $builder->addPlugin(new Plugin\AddHostPlugin(Psr17FactoryDiscovery::findUriFactory()->createUri($liveMode ? 'https://services.giaohangtietkiem.vn' : 'https://services.ghtklab.com')));
+        $builder->addPlugin(new Plugin\AddHostPlugin(Psr17FactoryDiscovery::findUriFactory()->createUri($liveMode ? 'https://services.giaohangtietkiem.vn' : 'https://services-staging.ghtklab.com')));
         $builder->addPlugin(new Plugin\HeaderDefaultsPlugin([
             'Content-Type' => 'application/json',
             'Accept' => 'application/json',
