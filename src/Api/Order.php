@@ -67,7 +67,6 @@ class Order extends AbstractApi
         $resolver = new OptionsResolver();
 
         $resolver->setDefault('order', function (OptionsResolver $orderResolver) {
-
             // Pick Info
 
             $orderResolver->define('id')
